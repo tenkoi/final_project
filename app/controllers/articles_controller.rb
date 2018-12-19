@@ -13,7 +13,7 @@ def create
     flash[:success] = "Post has been created"
     redirect_to articles_path
   else
-    flash[:danger] = "Post has not been created"
+    flash.now[:danger] = "Post has not been created"
     render :new
 end
 end
