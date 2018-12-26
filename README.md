@@ -1,3 +1,7 @@
 # README
 
-This is my final project at NEXT Academy Sept 2018.
+Listing Articles feature test
+-Create branch
+-create 2 post to display
+-list the two Post
+-expect both post titles and bodies to be presented

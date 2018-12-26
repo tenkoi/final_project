@@ -8,7 +8,7 @@ RSpec.feature "Creating Articles" do
     fill_in "Title", with: "Creating blog"
     fill_in "Body", with: "lorem ipsum"
 
-    click_button "Create Article"
+    click_button "Create Post"
 
     expect(page).to have_content("Post has been created")
     expect(page.current_path).to eq(articles_path)
@@ -22,7 +22,7 @@ RSpec.feature "Creating Articles" do
     fill_in "Title", with: ""
     fill_in "Body", with: ""
 
-    click_button "Create Article"
+    click_button "Create Post"
 
     expect(page).to have_content("Post has not been created")
     expect(page).to have_content("Title can't be blank")
